@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Welcome</title>
+	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+</h:head>
+<h:body>
+	<h1 class="title">Welcome #{banking.user.firstName}</h1>
+
+	<div align="center">
+		<p>Welcome #{banking.user.firstName} #{banking.user.lastName}</p>
+		<p>Your balance is: #{banking.user.balance}</p>
+		<p>Press the button to go back to the stating page.</p>
+		<h:form>
+			<h:commandButton value="Back to start" action="#{banking.toStartPage}"></h:commandButton>
+		</h:form>
+	</div>
+
+
+</h:body>
+</html>
